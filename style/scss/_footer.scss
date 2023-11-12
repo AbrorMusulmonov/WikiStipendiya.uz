@@ -1,0 +1,112 @@
+footer {
+    z-index: 10000;
+    transform: rotate(0);
+    position: relative;
+    background-color: rgba(0, 157, 90, 0.65);
+    padding-top: 76px;
+    padding-bottom: 26px;
+
+    .footer_main {
+        .footer_parts {
+            padding-bottom: 150px;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+
+            .footer_part {
+                h1 {
+                    color: rgba(0, 0, 0, 0.51);
+                    font-size: 40px;
+                    font-weight: 500;
+                    margin-bottom: 37px;
+
+
+                }
+
+                p {
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: rgba(255, 255, 255, 1);
+                    margin-bottom: 48px;
+
+                }
+
+                li {
+                    list-style: none;
+                }
+
+                ul {
+                    li {
+                        list-style: none;
+
+                        a {
+                            font-size: 20px;
+                            font-weight: 300;
+                            line-height: 34px;
+                            color: rgba(243, 239, 239, 0.849);
+                            text-decoration: none;
+
+                        }
+                    }
+                }
+
+                h5 {
+                    font-size: 20px;
+                    font-weight: 300;
+                    line-height: 34px;
+                    color: rgba(243, 239, 239, 0.849);
+
+                }
+            }
+        }
+
+        .copyright {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            color: rgba(232, 232, 232, 1);
+
+        }
+    }
+}
+
+
+@media(max-width:1160px) {
+    footer {
+        .footer_main {
+            .footer_parts {
+                flex-direction: column;
+                gap: 40px;
+            }
+        }
+    }
+}
+
+@media(max-width: 450px) {
+    footer {
+        .footer_main {
+            .footer_parts {
+                .footer_part {
+                    h1 {
+                        font-size: 35px;
+
+                    }
+
+                    p {
+                        font-size: 19px;
+                    }
+
+                    ul {
+                        li {
+                            a {
+                                font-size: 18px;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

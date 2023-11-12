@@ -1,0 +1,98 @@
+.news{
+    padding-top: 91px;
+    z-index: 10000;
+    transform: rotate(0);
+    position: relative;
+    .news_main{
+        h2{
+            color: rgba(77, 74, 70, 1);
+            margin-bottom: 50px;
+        }
+        .new_cards{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 30px;
+            column-gap: 43px;
+
+            .new_card{
+                position: relative;
+                width: 298px;
+                align-self: center;
+                justify-self: center;
+                .zeros{
+                    background-color: rgba(61, 181, 130, 1);
+                    width: 298px;
+                    height: 230px;
+                    border-radius: 13px;
+                    top: 0;
+                    position: relative;
+
+                    .zero{
+                        color: rgba(255, 255, 255, 0.21);
+                        font-size: 150px;
+                        position: absolute;
+                        top: -90px;
+                    }
+                    .zero2{
+                        left: 65px;
+
+                    }
+                    .zero3{
+                        right: 0;
+                    }
+                    .new_images{
+                        position: absolute;
+                        top: 50px;
+                        left: 46px;
+                        .photo_back{
+                            position: absolute; 
+                        }
+                        .photo_first{
+                            transform: rotate(-7deg);
+                        }
+                    }
+                }
+                h3{
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 19px;
+                    margin-top: 10px;
+                    color: rgba(0, 0, 0, 0.62);
+                }
+            }
+        }
+        // h1{
+        //     font-size: 360px;
+        //     // opacity: 0.4;
+        //     font-weight: 600;
+        //     color: rgba(255, 255, 255, 0.21);
+        // }
+    }
+}
+
+@media(max-width:1030px){
+    .news{
+        text-align: center;
+        .news_main{
+            .new_cards{
+                grid-template-columns: repeat(2, 1fr);
+                
+                
+            }
+        }
+    }
+}
+
+@media(max-width: 720px){
+    .news{
+        .news_main{
+            .new_cards{
+                grid-template-columns: repeat(1, 1fr);
+                
+                
+            }
+        }
+    }
+}
+
+

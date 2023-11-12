@@ -1,0 +1,134 @@
+.showcase{
+    overflow: hidden;
+    z-index: 10000;
+    transform: rotate(0);
+    position: relative;
+
+    // width: 100%;
+    .showcase_img{
+        background-image: linear-gradient(to top, #d9d9d923, #000000b5), url(/img/telegram-cloud-photo-size-2-5255923257788453544-y\ 1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 600px;
+        animation: slider 16s infinite ease;
+        .showcase_text{
+            text-align: center;  
+            padding-top: 104px;
+            font-family: 'Inter', sans-serif;
+            color: white;
+            h1{
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 42px;
+                margin-bottom: 23px;
+
+            }
+            p{
+                font-weight: 500;
+                line-height: 30px;
+                font-size: 25px;
+            }
+        }
+      
+    }
+}
+
+
+@keyframes slider {
+    0%{
+        background-image: linear-gradient(to top, #d9d9d923, #000000b5), url(/img/telegram-cloud-photo-size-2-5255923257788453544-y\ 1.jpg);;
+    }
+
+    20%{
+        background-image: linear-gradient(to top, #d9d9d923, #000000b5), url(/img/telegram-cloud-photo-size-2-5255923257788453545-y\ 1.jpg);
+    }
+
+    40%{
+        background-image: linear-gradient(to top, #d9d9d923, #000000b5), url(/img/telegram-cloud-photo-size-2-5255923257788453546-y\ 1.jpg);
+    }
+    60%{
+        background-image: linear-gradient(to top, #d9d9d923, #000000b5), url(/img/telegram-cloud-photo-size-2-5255923257788453548-y\ 1.jpg);
+    }
+
+    80%{
+        background-image: linear-gradient(to top, #d9d9d923, #000000b5), url(/img/telegram-cloud-photo-size-2-5255923257788453552-y\ 1.jpg);
+    }
+
+}
+
+@media(max-width: 1600px){
+    .showcase{
+        .showcase_img{
+            height: calc(100vh - 113px);
+
+        }
+    }
+}
+@media(max-width: 870px){
+    .showcase{
+        padding-top: 113px;
+    }
+}
+
+
+@media(max-width: 760px){
+    .showcase{
+        .showcase_img{
+            padding: 30px;
+            .showcase_text{
+                padding-top: 50px;
+                h1{
+                    font-size: 30px;
+                }
+                p{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 760px){
+    .showcase{
+        .showcase_img{
+            .showcase_text{
+                h1{
+                    font-size: 25px;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 550px){
+    .showcase{
+        .showcase_img{
+            .showcase_text{
+                h1{
+                    font-size: 22px;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 500px){
+    .showcase{
+        padding-top: 87px;
+
+        .showcase_img{
+            height: calc(100vh - 87px);
+    
+        }
+    }
+}

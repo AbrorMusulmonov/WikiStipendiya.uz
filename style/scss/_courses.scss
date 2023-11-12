@@ -1,0 +1,110 @@
+.courses {
+    margin-top: 150px;
+    background-color: rgba(208, 234, 223, 1);
+    z-index: 10000;
+    transform: rotate(0);
+    position: relative;
+    height: 623px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .courses_bcg {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        img {
+            &:nth-of-type(2) {
+                position: absolute;
+                left: 0;
+
+            }
+        }
+    }
+
+    .courses_bcg1 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: rotate(180deg);
+
+        img {
+            &:nth-of-type(2) {
+                position: absolute;
+                left: 0;
+
+            }
+        }
+    }
+
+    .course_main {
+        text-align: center;
+
+        h1 {
+            margin-bottom: 27px;
+            color: rgba(163, 3, 16, 1);
+            font-size: 60px;
+
+        }
+
+        h3 {
+            margin-bottom: 95px;
+            color: rgb(0, 0, 0);
+            font-size: 40px;
+        }
+
+        button {
+            background-color: rgba(163, 3, 16, 1);
+            // border: 5px solid rgba(255, 255, 255, 1);
+            border: 5px solid rgba(163, 3, 16, 1);
+
+            padding: 25px 90px;
+            border-radius: 44px;
+            transition: all 0.2s;
+
+            &:hover {
+                background-color: inherit;
+                border: 5px solid rgba(163, 3, 16, 1);
+
+                a {
+                    color: rgba(163, 3, 16, 1);
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media(max-width:774px) {
+    .courses {
+        height: 430px;
+
+        .courses_bcg1,
+        .courses_bcg {
+            display: none;
+        }
+
+        .course_main {
+            h1 {
+                font-size: 45px;
+
+            }
+
+            h3 {
+                font-size: 30px;
+                margin-bottom: 60px;
+            }
+
+            button {
+                padding: 20px 60px;
+            }
+        }
+
+    }
+}

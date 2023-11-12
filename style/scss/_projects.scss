@@ -1,0 +1,109 @@
+.projects{
+    padding-top: 100px;
+    .projects_main{
+        
+        .projects_logo{
+            display: flex;
+            justify-content: space-between; 
+            h2{
+                font-weight: 500;
+                font-size: 26px;
+                line-height: 31px;
+            }
+            a{
+                color: rgba(163, 3, 16, 1);
+                font-size: 26px;
+                font-weight: 600;
+                line-height: 31px;
+                text-decoration: none;
+            }
+        }
+
+        .projects_cards{
+            margin-top: 60px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 60px;  
+            .project_card{
+                justify-self: center;
+                border: 1px solid rgba(163, 3, 16, 1);
+                background-color: white;
+                border-radius: 8px;
+                // display: inline-block;
+                width: 287px;
+                height: 295px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;   
+                transition: all 0.2s;
+                &:hover{
+                    transform: scale(1.05);
+
+                }
+                img{
+                    margin-top: 30px;
+                    margin-bottom: 33px;             
+                } 
+                h3{
+                    font-weight: 500;
+                    font-size: 26px;
+                    margin-bottom: 33px;             
+
+
+                }
+                button{
+                    padding: 15px 50px;
+                    border: 2px solid rgba(61, 181, 130, 1);;
+                    border-radius: 50px;
+                    background-color:rgba(61, 181, 130, 1);
+                    cursor: pointer;
+                    margin-bottom: 33px;
+                    transition: all 0.2s;
+                    &:hover{
+                        background-color: inherit;
+                        border: 2px solid rgba(61, 181, 130, 1);;
+                        a{
+                            color: rgba(61, 181, 130, 1);
+                        }
+                    }             
+
+                    a{
+                        color: rgba(255, 255, 255, 1);
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 18px;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1070px){
+    .projects{
+        .projects_main{
+            .projects_cards{
+                grid-template-columns: repeat(2, 1fr);
+
+            }
+        }
+    }
+}
+
+@media(max-width: 730px){
+    .projects{
+        .projects_main{
+            .projects_logo{
+                text-align: center;
+                flex-direction: column;
+            }
+            .projects_cards{
+                grid-template-columns: repeat(1, 1fr);
+
+            }
+        }
+    }
+}
+
