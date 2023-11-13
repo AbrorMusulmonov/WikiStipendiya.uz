@@ -1,1 +1,1 @@
-#WikiStipendiya.uz | Youth Affairs Agency @2023
+WikiStipendiya.uz | Youth Affairs Agency @2023
